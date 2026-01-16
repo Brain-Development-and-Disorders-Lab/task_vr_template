@@ -30,7 +30,7 @@ namespace UXF
         {
             // Get OVR components
             _eyeGazeComponent = GetComponentInParent<OVREyeGaze>();
-            _faceComponent = FindObjectOfType<OVRFaceExpressions>();
+            _faceComponent = FindFirstObjectByType<OVRFaceExpressions>();
 
             // Eye gaze setup
             if (_eyeGazeComponent)
