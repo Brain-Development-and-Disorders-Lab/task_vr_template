@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
+using Headsup.Monitoring;
 using UXF;
 
 // Custom namespaces
@@ -10,7 +11,7 @@ using Utilities;
 
 namespace Core
 {
-    public class PresentationManager : MonoBehaviour
+    public class PresentationManager : MonoBehaviour, IHeadsupPresentationManager
     {
         // Left and Right eye cameras
         [Header("Camera components")] [SerializeField]
