@@ -7,9 +7,9 @@ using UnityEngine;
 
 using Headsup.Monitoring;
 using UXF;
-using MathNet.Numerics.Statistics;
 
 // Custom namespaces
+using Trials;
 using UI;
 using Utilities;
 
@@ -28,13 +28,6 @@ namespace Core
         [SerializeField]
         private bool debugMode = false;
         private const int DebugBlockSize = 4;
-
-        // Define the types of trials that occur during the experiment timeline
-        public enum ETrialType
-        {
-            Fit = 1,
-            Setup = 2,
-        };
 
         // Set the number of trials within a specific block in the experiment timeline
         private enum ETrialCount
